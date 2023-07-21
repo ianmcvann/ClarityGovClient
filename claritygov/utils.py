@@ -1,5 +1,4 @@
-
-us_state_to_abbrev = {
+us_state_to_abbrev_dict = {
     "Alabama": "AL",
     "Alaska": "AK",
     "Arizona": "AZ",
@@ -61,7 +60,7 @@ us_state_to_abbrev = {
     
 def abbrev_to_us_state(abbrev):
     abbrev = abbrev.upper()
-    return dict(map(reversed, us_state_to_abbrev.items()))[abbrev]
+    return dict(map(reversed, us_state_to_abbrev_dict.items()))[abbrev]
 def us_state_to_abbrev(state):
     state = state.title()
-    return us_state_to_abbrev[state]
+    return us_state_to_abbrev_dict[state].lower()
