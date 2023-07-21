@@ -11,17 +11,15 @@ setup(
     keywords=['claritygov', 'clarityapi', 'government', 'transparency'],
     license='Creative Commons Attribution 4.0 International Public License',
     description='Python API Client for ClarityGov, a free public developer API for accessing government legislative data in a standardized format.',
+    long_description=open('README.md').read(),
     author='ClarityGov',
+    download_url='https://github.com/ianmcvann/ClarityGovClient/archive/refs/tags/v0.1.0.tar.gz',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
-        'Topic :: Software Development :: API Client',
-        'License :: Creative Commons Attribution 4.0 International Public License',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3'
-        'Programming Language :: Python :: 3.10',
-        'Programming Language :: Python :: 3.11',
     ]
 )
