@@ -7,8 +7,8 @@ setup(
     install_requires=[
         'requests==2.31.0',
         'pytest==7.4.0'
-    ]
-    keywords=['claritygov', 'clarityapi', 'government', 'transparency']
+    ],
+    keywords=['claritygov', 'clarityapi', 'government', 'transparency'],
     license='Creative Commons Attribution 4.0 International Public License',
     description='Python API Client for ClarityGov, a free public developer API for accessing government legislative data in a standardized format.',
     author='ClarityGov',
