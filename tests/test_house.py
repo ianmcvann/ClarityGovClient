@@ -1,10 +1,4 @@
-from claritygov.api.state import State
-from claritygov.api_client import ClarityAPIClient
-from claritygov.api.house import House
+import claritygov.services.legislators_service as legislators_service
 
-def test_get_house_members():
-    api_client = ClarityAPIClient()
-    state = State(api_client, 'Maryland')
-    house = House(state)
-    members = house.get_house_members()
-    assert members.status_code == 200
+json = legislators_service.get_state_house_members('md')
+print(json)
